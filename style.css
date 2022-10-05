@@ -1,0 +1,152 @@
+/* Gloabal  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    /* border: 1px solid rgb(61, 61, 159) */
+}
+/* body */
+body {
+    background-color: black;
+    font-family: 'Courier New', Courier, monospace;
+    overflow: hidden;
+}
+
+/* view high scores button */
+button {
+    outline: none;
+    background-color: black;
+    font-size: 35px;
+    margin: 15px;
+    padding: 10px;
+}
+/* headers */
+h1, h2 {
+    color: rgb(146, 124, 17);
+    text-align: center;
+    font-size:50px;
+}
+
+.outer-container {
+    padding: 10px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+}
+/* Timer */
+.top-bar p {
+    float: right;
+    font-size: 35px;
+    margin: 15px;
+    padding: 10px;
+}
+
+.top-bar {
+
+}
+
+.inner-container {
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* welcome page header */
+.quiz-header {
+    display:block;
+}
+/* try to answer paragragh */
+.quiz-header p {
+    font-size: 25px;
+    text-align: center;
+    color:rgb(43, 141, 141)
+    
+}
+/* start button */
+.quiz-header button {
+    display: block;
+    margin: 0 auto;
+    color: black;
+    font-weight: bolder;
+    background-color: red;
+    
+}
+
+.quiz-header main {
+    margin-bottom: 30vh;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+/* questions container */
+main {
+    display: block;
+
+}
+
+.questions-section {
+    display: none;
+
+}
+/* multiple choice answers */
+li {
+    list-style: none;
+    
+
+}
+
+.quiz-end {
+    display: none;
+    color:rgb(43, 141, 141);
+    font-size: 35px;
+    text-align: center;
+    
+}
+
+.userscore {
+   
+}
+
+.submitBtn {
+    display: block;
+    margin: 0 auto;
+    color: black;
+    font-weight: bolder;
+    background-color: red;
+}
+
+.highscores {
+    display: none;
+    
+}
+
+.highscores ol {
+    overflow-y: scroll;
+    /* max-height: 200px; */
+    
+}
+
+.highscores li {
+    color:rgb(43, 141, 141);
+}
+
+.gobackBtn {
+   
+    color: black;
+    font-weight: bolder;
+    background-color: red;
+}
+
+.clearhighscroresBtn {
+
+    background-color: red;
+    color: black;
+    font-weight: bolder;
+    
+}
+

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Code Quiz </title>
+    <link rel = "stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- // main outer //  -->
+    <div class = "outer-container">
+<!-- top bar -->
+        <div class = "top-bar">
+            <button class = "highscoresBtn">View High Scores</button>
+            <p class = "countdown">Timer: 00</p>
+        </div>
+
+        <div class = "inner-container">
+            
+            <header id = "quiz-header">
+                <h1>Welcome to the Coding Quiz!</h1>
+                <p>Try and answer the following code-related questions within the time limit. Keep in mind that
+                    incorrect answers will penalize your your score time by 10 seconds! Press START to play!</p>
+
+                <button class = "startBtn">START</button>
+
+            </header>
+<!-- Quiz questions -->
+            <main>
+                <section class = "questions-section">
+                    <h2 id = "question">Question</h2>
+                    <ul>
+                        <li><button onclick = "grab(this)" class = "answer"></button></li>
+                        <li><button onclick = "grab(this)" class = "answer"></button></li>
+                        <li><button onclick = "grab(this)" class = "answer"></button></li>
+                        <li><button onclick = "grab(this)" class = "answer"></button></li>
+                        
+                    </ul>
+                </section>
+
+                <section class = "quiz-end">
+                    <h2>Quiz Finished!</h2>
+                    <p class = "userscore">Your Score: 00</p>
+                    <div>
+                        <label for="Enter Initials"></label>
+                        <input type="text">
+                        <button class = "submitBtn">SUBMIT</button>
+                    </div>
+                </section>
+
+                <section class = "highscores">
+                    <h2>High Scores!</h2>
+                    <ol>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ol>
+                    <button class = "gobackBtn">Go Back</button>
+                    <button class = "clearhighscoreBtn">Clear High Scores</button>
+                </section>
+
+            </main>
+        </div>
+
+
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
